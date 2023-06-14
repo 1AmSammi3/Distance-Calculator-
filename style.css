@@ -1,0 +1,166 @@
+.button{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    display: inline-block;
+    padding: 20px;
+    font-size: 40px;
+    border-radius: 10px;
+    align-self: center;
+    border: none;
+    background: linear-gradient(80deg, #3b00ff, #3b00ff);
+    color: white;
+    animation-name: gradient;
+    box-shadow: 0 10px 0 #0a0098;
+    transition: active .1s;
+}
+@keyframes gradient{
+    0%{
+        background: linear-gradient(160deg, #ff0088, #3b00ff, #3b00ff, #3b00ff);
+    }
+    10%{
+        background: linear-gradient(145deg, #ff0088, #3b00ff, #3b00ff);
+    }
+    20%{
+        background: linear-gradient(130deg, #ff0088, #3b00ff);
+    }
+    30%{
+        background: linear-gradient(115deg, #ff0088, #ff0088, #3b00ff);
+    }
+    40%{
+        background: linear-gradient(100deg, #ff0088, #ff0088, #ff0088, #3b00ff);
+    }
+    50%{
+        background: linear-gradient(85deg, #ce00ff, #ce00ff);
+    }
+    60%{
+        background: linear-gradient(115deg, #3b00ff, #ff0088, #ff0088, #ff0088);
+    }
+    70%{
+        background: linear-gradient(130deg, #3b00ff, #ff0088, #ff0088);
+    }
+    80%{
+        background: linear-gradient(145deg, #3b00ff, #ff0088);
+    }
+    90%{
+        background: linear-gradient(160deg, #3b00ff, #3b00ff, #ff0088);
+    }
+    100%{
+        background: linear-gradient(175deg, #3b00ff, #3b00ff,);
+    }
+}
+button:active{
+    animation: gradient .5s infinite linear;
+    transform: translateY(10px);
+    box-shadow: 0 5px 0 #09186c;
+}
+.reflect{
+    background: linear-gradient(#ffffff7d, #ffffff44, #ffffff21, #ffffff16);
+    align-self: center;
+    width: 250px;
+    height: 10px;
+    border-radius: 4px;
+    transform: translateY(-85px);
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    margin: 200px 0 70px 0;
+    color: #09186c;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    color: #09186c;
+}
+.inputs{
+    display: flex;
+    margin-top: 150px;
+    flex-direction: column;
+    gap: 100px;
+    text-align: center;
+}
+input{
+    width: 800px;
+    align-self: center;
+    border: 2px solid #3b00ff;
+    height: 80px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+}
+legend{
+    font-size: 40px;
+    font-weight: bold;
+    color: #09186c;
+}
+body.active{
+    background-color: #06001a;
+    color: white;
+}
+h1.active, h2.active, legend.active{
+    color: white;
+}
+input.active{
+    background-color: #0b0023;
+    color: white;
+    border: solid 5px #32009f
+}
+.but2{
+    font-size: 30px;
+}
+.reflect.two{
+    transform: translate(8px, -73.5px);
+    width: 225px;
+}
+@media only screen and (min-width: 800px){
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: #09186c;
+    margin: 100px 0 50px 0;
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+    color: #09186c;
+}
+.inputs{
+    display: flex;
+    margin-top: 150px;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+}
+input{
+    width: 500px;
+    align-self: center;
+    border: 2px solid #3b00ff;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    color: #09186c;
+}
+button{
+    font-size: 30px;
+    padding: 18px;
+}
+.but2{
+    font-size: 20px;
+    padding: 15px;
+}
+.reflect{
+    width: 195px;
+    transform: translateY(-69px);
+}
+.reflect.two{
+    transform: translate(7px, -52px);
+    width: 150px;
+}
+}

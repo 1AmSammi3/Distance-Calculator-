@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href ="style.css">
+    <title>Distance Calculator App</title>
+</head>
+<body>
+    <div>
+        <button onclick ="change()" class="but2">Change Theme</button>
+        <div class="reflect two"></div>
+    </div>
+    <h1>Distance Calculator App</h1>
+    <h2>Enter the values as Instructed</h2>
+    
+    <div class="inputs">
+        <legend id="legend1">Position one</legend>
+        <input class="lat1" placeholder="Enter the first latitude">
+        <input class="log1" placeholder="Enter the first Longitude">
+    
+        <legend id="legend2">Position two</legend>
+        <input class="lat2" placeholder="Enter the second latitude">
+        <input class="log2" placeholder="Enter the second Longitude">
+        <div class="button">
+            <button onclick="getdistance()">Get distance</button>
+            <div class="reflect"> </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
