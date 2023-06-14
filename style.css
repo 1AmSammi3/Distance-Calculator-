@@ -114,7 +114,7 @@ input.active{
     transform: translate(8px, -73.5px);
     width: 225px;
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 480px){
 h1{
     text-align: center;
     font-size: 35px;
